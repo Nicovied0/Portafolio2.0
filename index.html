@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolas Oviedo |PORTAFOLIO|</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="src/profile.png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body class="galaxy ">
+    <video src="Background.mp4" autoplay loop muted></video>
+    <nav>
+        <div class="open-btn" onclick="showSidebar()">
+            <i class="uil uil-bars"></i>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <div class="close-btn" onclick="hideSidebar()">
+            <i class="uil uil-multiply"></i>
+        </div>
+        <ul onclick="hideSidebar()">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="overlay" onclick="hideSidebar()"></div>
+        <div id="home">
+            <section class="home-title">
+                <h1>
+                    HOLA!<br />
+                    SOY Nicolas Oviedo
+                </h1>
+                <h3>DESARROLLADOR WEB</h3>
+            </section>
+            <section class="home-img">
+                <img src="src/profile.png" alt="perfil" width="100%" class="profile" />
+            </section>
+        </div>
+
+        <div id="about">
+            <section>
+                <h1>Sobre mi</h1>
+                <h3>
+                    Me caracterizo por ser una persona autodidacta, siempre intentando aprender nuevas tecnologías y
+                    herramientas.
+                    <br>
+                    Actualmente estoy buscando trabajar de lo que me apasiona, en un lugar que me permita seguir
+                    aprendiendo y crecer personalmete. Esforzandome en cumplir todas mi metas y objetivos.
+                </h3>
+                <br />
+            </section>
+        </div>
+
+        <div id="skills">
+            <h1>Habilidades</h1>
+            <section class="carousel">
+                <div class="skills"></div>
+            </section>
+        </div>
+
+        <div id="projects">
+            <h1>Proyectos</h1>
+            <div class="projects"></div>
+        </div>
+
+        <div id="contact">
+            <h1>Contacto</h1>
+            <div class="contact">
+                <form action="https://formsubmit.co/el/cafire" method="post">
+                    <input type="hidden" name="_next" value="https://Nicovied0.github.io/" />
+                    <input type="hidden" name="_subject" value="MENSAJE DEL PORTAFOLIO" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="text" name="name" placeholder="Nombre" autocomplete="off" />
+                    <input type="email" name="email" placeholder="Email"
+                        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                        title="Ingrese un email válido" autocomplete="off"/>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">Enviar consulta</button>
+                </form>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/nicoboviedo/" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Nicovied0" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="mailto:  briannoviedo@gmail.com" target="_blank">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
