@@ -1,3 +1,7 @@
 # Portafolio2.0
 
-![Alt Text](/src/gif.gif)
+
+
+<p align="center">
+  <img src="/src/gif.gif" alt="Img" />
+</p>
